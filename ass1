@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+  int num,i,r,ans=0;
+  scanf("%d",&num);
+  i=num;
+  while(i!=0){
+    r=i%10;
+    ans=10*ans+r;
+    i=i/10;
+  }
+  (num==ans)?printf("%d is palindrome.",ans):("%d is not palindrome.",ans);
+  return 0;
+}
+
+
