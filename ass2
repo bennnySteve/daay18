@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+  int num,i,r,ans=0;
+  scanf("%d",&num);
+  i=num;
+  while(i!=0){
+    r=i%10;
+    ans=10*ans+pow(r,3);
+    i=i/10;
+  }
+  printf("%d is armstrong.",ans):("%d is not armstrong.",ans);
+  return 0;
+}
